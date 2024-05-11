@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="10dp"
+    tools:context=".screens.BusinessHome">
+
+    <TextView
+        android:id="@+id/head1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AIRIDE"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/business_profile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/person"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        app:tint="@color/blue"/>
+    <TextView
+        android:id="@+id/head2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Business Owner"
+        android:layout_below="@id/head1"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/head2"
+        android:background="@drawable/button"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignParentEnd="true"
+        android:text="Add Offer"
+        android:onClick="onLogin"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/business_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_offer"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/bussiness_card"/>
+</RelativeLayout>

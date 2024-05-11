@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".screens.AddOffer">
+    <LinearLayout
+        android:id="@+id/actionbar_addoffer"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/blue"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+        <ImageButton
+            android:id="@+id/bck_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back"
+            android:contentDescription="go back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Add New Offer"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar_addoffer"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:text="Add Offer Image"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/add_photo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/photo_bg"
+                android:src="@drawable/add_photo"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Offer Details"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Offer Title"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/add_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="140dp"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text"
+                android:hint="Add Description"
+                android:inputType="textMultiLine"/>
+            <TextView
+                android:id="@+id/select_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:text="Select Preference/Type"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text"
+                android:entries="@array/category_options"
+                />
+
+            <TextView
+                android:id="@+id/location_coordinates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:text="Coordinates: Empty"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/add_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Location"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="50dp"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="50dp"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

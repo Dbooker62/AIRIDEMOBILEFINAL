@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ai_ride</string>
+    <string name="reset_password">Please Enter Your Email To Get a New Password Link</string>
+    <string name="channel_name">AI Ride</string>
+    <string name="channel_description">Ai Ride</string>
+
+
+    <string-array name="preferences_array">
+        <item>Restaurant</item>
+        <item>Car</item>
+        <item>Furniture</item>
+    </string-array>
+</resources>

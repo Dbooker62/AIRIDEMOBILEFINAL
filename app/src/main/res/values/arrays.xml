@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_options">
+        <item>Household</item>
+        <item>Car</item>
+        <item>Restaurant</item>
+        <item>Hotel</item>
+        <item>Guestrooms</item>
+        <item>Wholesale</item>
+        <item>Textile</item>
+        <item>Services</item>
+        <item>Education</item>
+        <item>Artifacts</item>
+        <item>Others</item>
+    </string-array>
+</resources>
